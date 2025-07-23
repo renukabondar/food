@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #ff6347;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffa07a;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1200x400/?food');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .dishes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .dish {
+            background-color: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .dish img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Bites</h1>
+    <p>Your favorite food, delivered fresh!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    Welcome to Delicious Bites!
+</div>
+
+<div class="section">
+    <h2>Featured Dishes</h2>
+    <div class="dishes">
+        <div class="dish">
+            <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese and tomato pizza with fresh basil.</p>
+        </div>
+        <div class="dish">
+            <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+            <h3>Cheeseburger</h3>
+            <p>Juicy grilled beef patty with cheese and veggies.</p>
+        </div>
+        <div class="dish">
+            <img src="https://source.unsplash.com/300x200/?salad" alt="Salad">
+            <h3>Green Salad</h3>
+            <p>Fresh greens, cucumber, tomato and vinaigrette dressing.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 Delicious Bites. All rights reserved.
+</footer>
+
+</body>
+</html>
